@@ -1,7 +1,7 @@
 language: python
 python:
 -"3.6"
-script: python python_check/python_ml4.py
+script: python_check/python_ml4.py
 branches:
      only:
         - master
