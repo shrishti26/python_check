@@ -1,1 +1,7 @@
-
+language: python
+python:
+-"3.6"
+script: python repository_name/file_name.py
+branches:
+     only:
+        - master
