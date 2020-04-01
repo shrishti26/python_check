@@ -1,7 +1,13 @@
 language: python
 python:
 -"3.6"
-script: python_check/python_ml4.py
-branches:
-     only:
-        - master
+install:
+  - pip install codecov
+
+# Run the unit test
+script:
+  - coverage run python_ml4.py
+
+# Push the results back to codecov
+after_success:
+  - codecov
